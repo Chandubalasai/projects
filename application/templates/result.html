@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style1.css') }}">
+</head>
+<body>
+    <form action="/form_submit" method="POST">
+        <h1><center>check your details</center></h1>
+        <div class="form_container">
+            <table>
+                <tr>
+                    <th>first_name :</th>
+                    <td>{{first_name}}</td>
+                </tr>
+                <tr>
+                    <th>last_name :</th>
+                    <td>{{last_name}}</td>
+                </tr>
+                <tr>
+                    <th>email:</th>
+                    <td>{{email}}</td>
+                </tr>
+                <tr>
+                    <th>job_role :</th>
+                    <td>{{job_role}}</td>
+                </tr>
+                <tr>
+                    <th>address :</th>
+                    <td>{{address}}</td>
+                </tr>
+                <tr>
+                    <th>city :</th>
+                    <td>{{city}}</td>
+                </tr>
+                <tr>
+                    <th>pincode:</th>
+                    <td>{{pincode}}</td>
+                </tr>
+                <tr>
+                    <th>date:</th>
+                    <td>{{date}}</td>
+                </tr>
+                <tr>
+                    <th>upload:</th>
+                    <td>{{upload}}</td>
+                </tr>
+            </table>
+        </div>
+                   
+        <input type="submit" value="submit">    
+    </form>    
+
+    
+</body>
+</html>

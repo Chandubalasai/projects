@@ -1,0 +1,26 @@
+.container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .blasting-colors {
+    animation: blast 1.5s infinite;
+  }
+  
+  @keyframes blast {
+    0% { color: #ff0000; }
+    50% { color: #00ff00; }
+    100% { color: #0000ff; }
+  }
+  
+  .spreading-flowers {
+    animation: spread 2s infinite;
+  }
+  
+  @keyframes spread {
+    0% { opacity: 0; }
+    50% { opacity: 1; transform: scale(1.5); }
+    100% { opacity: 0; }
+  }
